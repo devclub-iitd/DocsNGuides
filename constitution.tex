@@ -1,0 +1,54 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{titlepic}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fullpage}
+\usepackage{array}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+\renewcommand{\labelenumii}{\alph{enumii}}
+\renewcommand{\labelenumiii}{\roman{enumiii}}
+\newcommand{\heading}[1]{{\subsubsection*{\hfill#1\hfill\phantom{tab}}}}
+\newcommand{\PreserveBackslash}[1]{\let\ttemp=\\#1\let\\=\ttemp}
+\let\PBS=\PreserveBackslash
+\newcommand{\lefttblcol}{\PreserveBackslash\raggedright\hspace{0pt}}
+\newcommand{\righttblcol}{\PBS\raggedleft\hspace{0pt}}
+\newcommand{\centretblcol}{\PBS\centering\hspace{0pt}}
+\newcolumntype{P}[1]{>{\lefttblcol}p{#1}}
+
+\makeatletter
+\renewcommand{\chapter}{\@startsection{chapter}{1}{0mm}{\baselineskip}{0.5\baselineskip}{\centering\sc\large}}
+\renewcommand{\section}{\@startsection{subsection}{2}{0mm}{-\baselineskip}{0.5\baselineskip}{\normalfont\large\bf}}
+\makeatother
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesection}{Chapter \arabic{chapter}}
+
+\title{\includegraphics[width=5cm]{images/iitd.png}
+      \\\vspace{10mm} \textbf{Constitution of Software Development Club}
+      \\ IIT Delhi}
+
+\date{\today}
+
+\setcounter{tocdepth}{1}
+
+
+\begin{document}
+\maketitle
+
+
+
+\tableofcontents
+
+\newpage
+\noindent
+
+\subsubsection*{Preamble}
+The Software Development Club (hereafter called the Dev Club) shall aim at improving the applied computer science culture in the college and thrive to instill such skills in the students of this college. All of the club’s activities shall be performed in accordance with the rules and regulations laid down in this constitution. All of the team members are thereby, bound to follow the rules of this constitution and any breach of any clause in this constitution is liable for disqualification as a member of the club.
+
+\chapter{Founding provisions  (\S1--6)}
+
+\section{Republic of South Africa}
+ 
+
+\end{document}
